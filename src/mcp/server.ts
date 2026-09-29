@@ -2,7 +2,6 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { registerSearchTool } from "./tools/search.js";
 import { registerNowPlayingTool } from "./tools/nowPlaying.js";
 import { registerGetQueueTool } from "./tools/getQueue.js";
-import { registerClearQueueTool } from "./tools/clearQueue.js";
 import { registerListDevicesTool } from "./tools/devices.js";
 import { registerPlayTool } from "./tools/play.js";
 import { registerQueueAddTool } from "./tools/queueAdd.js";
@@ -18,7 +17,6 @@ export function createServer(): McpServer {
   registerSearchTool(server);
   registerNowPlayingTool(server);
   registerGetQueueTool(server);
-  registerClearQueueTool(server);
   registerListDevicesTool(server);
   registerPlayTool(server);
   registerQueueAddTool(server);
