@@ -51,6 +51,7 @@ export interface SpotifyPlaybackState {
   device: SpotifyDevice | null;
   shuffle_state: boolean;
   repeat_state: string;
+  context: { uri: string; type: string } | null;
 }
 
 export interface SpotifySearchResults {
